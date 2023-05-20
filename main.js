@@ -24,13 +24,17 @@ const getName = (array) => {
     const html = `
         <div id = "User">
             <picture>
-                <img src="${contact.picture.medium}" alt = "Image of Person" class= "userImg">
+                <img src="${contact.picture.large}" alt = "Image of Person" class= "userImg">
                 
                 </img>
             </picture>
 
-            <h2>${contact.name.first} ${contact.name.last}</h2>
+            <h2>${contact.name.first} ${contact.name.last}, ${contact.dob.age}</h2>
+            <h4>Email: ${contact.email}</h4>
+            <h4>Phone: ${contact.cell}</h4>
+
         </div>
+        <br>
         
 
         `;
